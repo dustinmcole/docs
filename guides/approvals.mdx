@@ -1,0 +1,98 @@
+---
+title: Approvals & Human-in-the-Loop
+description: Joan proposes, you approve. Here's how the approval flow works.
+---
+
+Joan is powerful, but she's not autonomous. By default, she **proposes actions and waits for your approval** before executing anything that creates, modifies, or sends data.
+
+## How Approvals Work
+
+When Joan wants to take an action, she'll present it clearly and wait:
+
+<Info>
+**Approval flow example:**
+
+**Joan:** I'll create a ClickUp task:
+- **Title:** Review Q4 donor report
+- **Assignee:** Sarah
+- **Due:** Friday
+- **Priority:** High
+- **List:** EFMN — Active Tasks
+
+Want me to go ahead?
+
+**You:** Yes *(or "Make it medium priority" or "Hold off")*
+</Info>
+
+Joan accepts:
+
+- **"Yes"**, **"Go ahead"**, **"Do it"** — executes as proposed
+- **Modifications** — "Yes, but make it due next Monday" — adjusts and executes
+- **"No"**, **"Hold off"**, **"Cancel"** — does nothing
+- **Numbered selections** — when Joan proposes multiple items, reply with numbers: "1, 3, 5"
+
+## What Requires Approval
+
+| Action | Requires Approval? |
+|--------|-------------------|
+| Sending emails | Yes — always |
+| Creating tasks | Yes |
+| Modifying existing data | Yes |
+| Posting to external channels | Yes |
+| Reading/querying data | No — read-only is safe |
+| Generating reports | No — just information |
+| Drafting (not sending) | No — draft only |
+| Scheduled job output | Depends on configuration |
+
+## Batch Approvals
+
+When Joan proposes multiple items (like action items from a meeting), you can approve selectively:
+
+<Info>
+**Batch approval example:**
+
+**Joan:** From today's strategy meeting, I extracted these action items:
+
+1. Create task: "Update donor database" — Sarah, due Wednesday
+2. Create task: "Review grant timeline" — Mike, due Friday
+3. Draft email to board about program changes
+4. Schedule follow-up meeting for next Tuesday
+
+Which ones should I proceed with?
+
+**You:** 1, 2, and 4. Hold on 3 — I'll write that one myself.
+</Info>
+
+## Adjusting Approval Levels
+
+As you build trust with Joan, you can loosen the approval requirements for specific actions:
+
+- **Tight (default):** Everything proposed, nothing automatic
+- **Standard:** Read-only and low-risk actions automatic; creates/sends require approval
+- **Trusted:** Routine operations automatic (task creation, report delivery); sensitive actions still require approval
+
+To change your approval level, contact Datawake. Changes are configured per-user and per-action type.
+
+<Warning>
+**Sensitive actions always require approval.** Regardless of your trust level, some actions always require human sign-off: sending external emails, modifying financial data, deleting anything, and sharing data externally.
+</Warning>
+
+## Approval Timeouts
+
+If Joan proposes an action and you don't respond:
+
+- **No timeout by default** — Joan waits indefinitely
+- **Scheduled jobs** — If a job requires approval and doesn't get it, Joan logs the skip and moves on
+- **Time-sensitive items** — Joan will remind you if an approval has been pending and a deadline is approaching
+
+## Auditing
+
+Every approval (and rejection) is logged. You can ask Joan for a history:
+
+> *"What actions did you take this week?"*
+>
+> *"Show me pending approvals."*
+>
+> *"What did I reject last month?"*
+
+All actions are auditable and version-controlled by Datawake.

@@ -1,0 +1,88 @@
+---
+title: Tools & Integrations
+description: What Joan connects to and how integrations work.
+---
+
+# Tools & Integrations
+
+Joan connects to virtually any tool with an API — plus browser automation for tools without APIs.
+
+## Connected Tools
+
+Joan can integrate with any of the following. Your specific connections are configured during onboarding.
+
+### Communication
+| Tool | What Joan Does With It |
+|------|----------------------|
+| **Slack** | Primary interface. Joan lives here — messages, channels, threads, approvals. |
+| **Microsoft Teams** | Alternative primary interface with the same capabilities. |
+| **Gmail / Google Workspace** | Read emails, draft responses, send (with approval), manage labels. |
+| **Microsoft 365 / Outlook** | Same email capabilities for Microsoft environments. |
+| **iMessage** | Quick personal messages and approvals on the go. |
+
+### Project Management
+| Tool | What Joan Does With It |
+|------|----------------------|
+| **ClickUp** | Create tasks, update statuses, query projects, track time, manage docs. |
+| **Asana** | Task creation, project tracking, status updates. |
+| **Jira** | Issue management, sprint tracking, status queries. |
+| **Trello** | Board management, card creation, status tracking. |
+| **Notion** | Page creation, database queries, documentation. |
+
+### Finance
+| Tool | What Joan Does With It |
+|------|----------------------|
+| **QuickBooks** | Expense queries, invoice tracking, financial reporting, receipt categorization. |
+| **Bill.com** | Invoice management, payment tracking. |
+
+### CRM & Fundraising
+| Tool | What Joan Does With It |
+|------|----------------------|
+| **Salesforce** | Contact lookups, opportunity tracking, report queries, data updates. |
+| **HubSpot** | Contact management, deal tracking, marketing data. |
+| **Bloomerang** | Donor management, giving history, stewardship tracking. |
+
+### Documents & Storage
+| Tool | What Joan Does With It |
+|------|----------------------|
+| **Google Drive** | Read documents, create files, organize folders, share links. |
+| **Google Docs** | Read and draft documents, collaborative editing prep. |
+| **Google Sheets** | Query data, generate reports, update records. |
+| **Google Calendar** | Schedule management, meeting prep, conflict detection. |
+| **OneDrive / SharePoint** | Same capabilities for Microsoft environments. |
+
+### Browser Automation
+For tools without APIs, Joan uses a web browser on her dedicated machine:
+
+- Web research and data gathering
+- Form fills and submissions
+- Data lookups on web platforms
+- Screenshot capture for verification
+- Any task you'd normally do in a browser
+
+## How Integrations Work
+
+Each integration is:
+
+1. **Scoped** — Joan only accesses the data you authorize. She can't see everything in your Salesforce — only what her integration credentials allow.
+2. **Read-first** — Most integrations default to read-only. Write access (creating tasks, sending emails) requires explicit configuration.
+3. **Authenticated** — Each connection uses secure API credentials managed by Datawake. No credentials are shared between clients.
+4. **Monitored** — Every API call is logged for audit purposes.
+
+## Requesting New Integrations
+
+If Joan doesn't currently connect to a tool you use:
+
+1. **Check if it has an API** — Most modern tools do. Joan can connect to any tool with a REST API.
+2. **No API?** — Joan can use browser automation as a fallback.
+3. **Contact Datawake** — New integrations are typically set up within a few days using your support hours.
+
+<Tip>
+**Common integration requests:** "Can Joan connect to [tool]?" — The answer is almost always yes. If it has an API or a web interface, Joan can work with it.
+</Tip>
+
+## Integration Limits
+
+- **Rate limits** — Some APIs have request limits. Joan is configured to stay well within them.
+- **Data freshness** — Joan queries tools in real-time for most requests. Scheduled reports may use cached data.
+- **Permissions** — Joan can only do what the API credentials allow. She can't bypass your tool's permission model.
