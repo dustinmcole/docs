@@ -1,12 +1,12 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Meet Joan",
-  "description": "Your AI assistant, explained. Learn how to work with Joan — from first message to advanced workflows.",
+  "name": "Meet Bryn",
+  "description": "Your AI assistant, explained. Learn how to work with Bryn — from first message to advanced workflows.",
   "logo": {
     "light": "/images/logo.svg",
     "dark": "/images/logo.svg",
-    "href": "https://meetjoan.ai"
+    "href": "https://meetbryn.ai"
   },
   "favicon": "/images/favicon.svg",
   "colors": {
@@ -37,11 +37,11 @@
   },
   "footer": {
     "socials": {
-      "website": "https://meetjoan.ai"
+      "website": "https://meetbryn.ai"
     }
   },
   "search": {
-    "prompt": "Ask about Joan..."
+    "prompt": "Ask about Bryn..."
   },
   "navigation": {
     "tabs": [
@@ -53,7 +53,7 @@
             "pages": [
               "getting-started/welcome",
               "getting-started/first-conversation",
-              "getting-started/how-to-talk-to-joan"
+              "getting-started/how-to-talk-to-bryn"
             ]
           }
         ]
@@ -62,7 +62,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Using Joan",
+            "group": "Using Bryn",
             "pages": [
               "guides/capabilities",
               "guides/switching-models",

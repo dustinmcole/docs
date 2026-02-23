@@ -5,18 +5,18 @@ description: How your data is protected, who can access what, and how audit trai
 
 # Security & Privacy
 
-Security isn't an add-on tier — it's the architecture. Every Joan deployment has mandatory security built in.
+Security isn't an add-on tier — it's the architecture. Every Bryn deployment has mandatory security built in.
 
 ## The Six Principles
 
-### 1. Joan only talks to people you authorize
-Every user is individually allowlisted. Random people can't interact with Joan. If someone not on the list sends her a message, she ignores it.
+### 1. Bryn only talks to people you authorize
+Every user is individually allowlisted. Random people can't interact with Bryn. If someone not on the list sends her a message, she ignores it.
 
-### 2. Joan can only see what you give her access to
-Each integration is scoped to specific data. Joan's Salesforce connection might only see donor records, not HR data. Her ClickUp access might be limited to specific spaces. You define the boundaries.
+### 2. Bryn can only see what you give her access to
+Each integration is scoped to specific data. Bryn's Salesforce connection might only see donor records, not HR data. Her ClickUp access might be limited to specific spaces. You define the boundaries.
 
-### 3. Joan proposes, she doesn't act
-Draft emails get reviewed before sending. Task creation gets confirmed. Data modifications require approval. Joan never sends, creates, or deletes without human sign-off.
+### 3. Bryn proposes, she doesn't act
+Draft emails get reviewed before sending. Task creation gets confirmed. Data modifications require approval. Bryn never sends, creates, or deletes without human sign-off.
 
 See [Approvals & Human-in-the-Loop](../guides/approvals.md) for details.
 
@@ -24,22 +24,22 @@ See [Approvals & Human-in-the-Loop](../guides/approvals.md) for details.
 Each client gets a **completely isolated environment**. No shared infrastructure, no shared databases. Even search indexing runs locally on your dedicated machine.
 
 ### 5. Everything is auditable
-Every action Joan takes is logged:
+Every action Bryn takes is logged:
 
 - Every conversation recorded
 - Every API call tracked
 - Every configuration change version-controlled
 - Every approval and rejection documented
 
-Ask Joan for her activity log anytime, or request a full audit report from Datawake.
+Ask Bryn for her activity log anytime, or request a full audit report from Datawake.
 
 ### 6. You can shut it off instantly
-One command stops Joan completely. Your data stays intact. No lock-in, no data held hostage. If you leave, we hand over your entire configuration — standard files, no proprietary formats.
+One command stops Bryn completely. Your data stays intact. No lock-in, no data held hostage. If you leave, we hand over your entire configuration — standard files, no proprietary formats.
 
 ## Infrastructure Security
 
 ### Dedicated Hardware
-Joan runs on her own dedicated Mac — not shared cloud infrastructure. Your data, files, and systems are isolated to that single machine.
+Bryn runs on her own dedicated Mac — not shared cloud infrastructure. Your data, files, and systems are isolated to that single machine.
 
 ### Encryption
 - **Data at rest** — Enterprise-grade encryption on all storage
@@ -52,13 +52,13 @@ Joan runs on her own dedicated Mac — not shared cloud infrastructure. Your dat
 - **Role-based permissions** — Different users can have different approval levels
 
 ### Monitoring
-- **Health monitoring** — Joan's infrastructure is monitored 24/7
+- **Health monitoring** — Bryn's infrastructure is monitored 24/7
 - **Security patches** — Applied promptly as they become available
 - **Alerting** — Datawake is notified of any anomalies
 
 ## SOC 2 Alignment
 
-Joan's security practices align with SOC 2 standards:
+Bryn's security practices align with SOC 2 standards:
 
 - Access control and authentication
 - Data encryption and protection
@@ -68,14 +68,14 @@ Joan's security practices align with SOC 2 standards:
 
 ## Data Handling
 
-### What Joan stores
+### What Bryn stores
 - Conversation history (for context and memory)
 - Learned preferences and corrections
 - Scheduled job configurations
 - Integration credentials (encrypted)
 - Cached data from connected tools
 
-### What Joan doesn't store
+### What Bryn doesn't store
 - Raw data from your tools beyond what's needed for active tasks
 - Conversation data from other clients (isolation is absolute)
 - Credentials in plain text
@@ -85,7 +85,7 @@ Conversation history and logs are retained for the duration of your service. Upo
 
 ## Compliance Considerations
 
-If your organization has specific compliance requirements (HIPAA, FERPA, PCI, etc.), discuss them during your discovery session. Joan's architecture supports additional security measures:
+If your organization has specific compliance requirements (HIPAA, FERPA, PCI, etc.), discuss them during your discovery session. Bryn's architecture supports additional security measures:
 
 - Enhanced audit logging
 - Data handling restrictions
@@ -94,4 +94,4 @@ If your organization has specific compliance requirements (HIPAA, FERPA, PCI, et
 
 ## Reporting a Security Concern
 
-If you notice anything unusual with Joan's behavior or suspect a security issue, contact Datawake immediately at [dustin@datawake.io](mailto:dustin@datawake.io).
+If you notice anything unusual with Bryn's behavior or suspect a security issue, contact Datawake immediately at [dustin@datawake.io](mailto:dustin@datawake.io).
